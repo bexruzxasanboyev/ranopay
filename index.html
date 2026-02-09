@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ra'no Mo'minova</title>
-
   <style>
     * {margin: 0;padding: 0;box-sizing: border-box;}
     body, html {overflow-x: hidden;}
@@ -38,11 +37,8 @@
     @media (max-width:400px) {.date__info {top: 66%;}.date {padding-top: 15px;}.date__btn {max-width: 360px;}}
     @media (max-width:340px) {.date__info {max-width: 260px;padding: 6px 10px;top: 65%;}.date__btn {max-width: 310px;margin-top: -21px;}}
   </style>
-
-  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='allr'" />
-  <noscript>
-    <link rel="stylesheet" href="./css/main.css" />
-  </noscript>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="./css/main.css" /></noscript>
 </head>
 
 <body>
@@ -177,13 +173,15 @@
             <p class="tariffs__title">99 000 so'm</p>
 
             <!-- ✅ MUHIM: data qo‘shildi -->
-            <button
+            <a
+            style="text-decoration: none;"
+
               href="https://t.me/ranomominova_barakaliayol?text=Assalomu%20alaykum!%0AYaxshimisiz%3F%0A%0AMen%20Ra%E2%80%99no%20Mo%E2%80%99minovaning%20%E2%80%9CTejamkor%20ayol%E2%80%9D%20tarifini%20tanladim.%0A%0AMen%20tolov%20qilishim%20uchun%20carta%20malumotlarini%20bera%20olasizmi"
               class="tariffs__btn registerBtn"
               type="button"
               data-tariff-name="Tejamkor Ayol"
               data-tariff-price="99000"
-            >ISHTIROK ETISH >>></button>
+            >ISHTIROK ETISH >>></a>
           </div>
 
           <!-- Tarif 2 -->
@@ -215,13 +213,14 @@
 
             <p class="tariffs__title">149 000 so’m</p>
 
-            <button
+            <a
+            style="text-decoration: none;"
               href="https://t.me/ranomominova_barakaliayol?text=Assalomu%20alaykum!%0AYaxshimisiz%3F%0A%0AMen%20Ra%E2%80%99no%20Mo%E2%80%99minovaning%20%E2%80%9CMunosib%20Ayol%E2%80%9D%20tarifini%20tanladim.%0A%0AMen%20tolov%20qilishim%20uchun%20carta%20malumotlarini%20bera%20olasizmi"
               class="tariffs__btn"
               type="button"
               data-tariff-name="Munosib Ayol"
               data-tariff-price="149000"
-            >ISHTIROK ETISH >>></button>
+            >ISHTIROK ETISH >>></a>
           </div>
         </div>
 
@@ -312,7 +311,6 @@
     </div>
   </div>
 
-  <script src="./js/phoneFormatter.js" defer></script>
   <script src="./js/index.js" defer></script>
 
   <!-- ✅ TARIF TANLASH LOGIKASI (copy/paste) -->
