@@ -39,6 +39,7 @@
   </style>
   <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="./css/main.css" /></noscript>
+  <meta name="facebook-domain-verification" content="0r8j120sobdp9awr2rux6bjcmfoy46" />
 </head>
 
 <body>
@@ -312,41 +313,22 @@
   </div>
 
   <script src="./js/index.js" defer></script>
-
-  <!-- ✅ TARIF TANLASH LOGIKASI (copy/paste) -->
-  <script>
-    (function () {
-      document.querySelectorAll(".registerBtn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const name = btn.dataset.tariffName || "Tarif";
-          const price = Number(btn.dataset.tariffPrice || 0);
-
-          const tariff = {
-            name,
-            price,          // UZS
-            currency: "UZS"
-          };
-
-          localStorage.setItem("selectedTariff", JSON.stringify(tariff));
-
-          // Formaga ham yozib qo‘yamiz (siz payload.type uchun)
-          if (tariffInput) tariffInput.value = name;
-
-          openModal();
-        });
-      });
-
-      // Agar user “Marafonda qatnashish >>>” bosib pastga tushsa ham
-      // default tarifni qo‘yib ketamiz (xohlasangiz o‘chiramiz)
-      if (!localStorage.getItem("selectedTariff")) {
-        localStorage.setItem("selectedTariff", JSON.stringify({
-          name: "Standart",
-          price: 99000,
-          currency: "UZS"
-        }));
-        if (tariffInput && !tariffInput.value) tariffInput.value = "Standart";
-      }
-    })();
-  </script>
+<!-- Meta Pixel Code -->
+<script defer>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '455707253627604');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=455707253627604&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
